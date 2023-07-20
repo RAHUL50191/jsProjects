@@ -1,0 +1,10 @@
+#output{
+    background-color: blanchedalmond;
+    opacity: 1;
+    border-color: gray;
+    color: black;
+}
+#from,#to{
+    width: 10.5rem;
+   
+}

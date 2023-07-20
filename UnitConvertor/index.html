@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="inedx.css" />
+  </head>
+  <body id="body">
+    <nav>
+      <button onclick="updateIndex('length')">length</button>
+      <button onclick="updateIndex('time')">time</button>
+      <button onclick="updateIndex('area')">area</button>
+      <button onclick="updateIndex('weight')">weight</button>
+      <button onclick="updateIndex('volume')">volume</button>
+      <button onclick="updateIndex('temperature')">temperature</button>
+    </nav>
+    <br />
+    <!-- <main>
+      <div style="display: inline-flex">
+        <div>
+          <label>Input :</label><br />
+          <input type="text" id="input" oninput="output(event,from,to,type)" />
+        </div>
+        <div>
+          <label>Output:</label><br />
+          <input type="text" id="output" disabled />
+        </div>
+      </div>
+      <div class="fromTo" style="display: flex">
+        <div id="type" style="display: none"></div>
+        <div id="from"></div>
+        <div id="to"></div>
+      </div>
+    </main> -->
+    <main>
+      <table>
+        <tr>
+          <th>
+            <label>Input:</label>
+          </th>
+          <th>
+            <label>Output:</label>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" id="input" oninput="output(event,from,to,type)" />
+          </td>
+          <td>
+            <input type="text" id="output" disabled />
+          </td>
+        </tr>
+        <tr class="fromTo">
+          <td style="display: none" id="type"></td>
+          <td id="from"></td>
+          <td id="to"></td>
+        </tr>
+      </table>
+    </main>
+
+    <script src="/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <script>
+        let x = 0;
+        function timer() {
+          let timer = document.getElementById("timer");
+          while (timer.checked) {
+            setTimeout(50000);
+          }
+        }
+      </script>
+      <button onchange="timer()" value="${x}">
+        <checkbox id="timer" checked>x</checkbox>
+      </button>
+    </div>
+  </body>
+</html>
